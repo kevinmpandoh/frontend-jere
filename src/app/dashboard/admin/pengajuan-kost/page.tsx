@@ -9,8 +9,6 @@ import { kostAdminService } from "@/features/kost/services/kostAdmin.service";
 import PageHeader from "@/components/common/PageHeader";
 import { KostSubmissionTable } from "./KostSubmissionTable";
 import { useConfirm } from "@/hooks/useConfirmModal";
-import SearchInput from "@/components/common/SearchInput";
-import FilterBar from "@/components/common/FitlerBar";
 
 const AdminKostSubmissionsPage = () => {
   const router = useRouter();
