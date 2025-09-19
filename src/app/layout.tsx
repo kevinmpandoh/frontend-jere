@@ -1,0 +1,40 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "../styles/globals.css";
+import Providers from "./provider";
+import LoginModal from "@/components/LoginModal";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | Moon Kost - Aplikasi Penyewaan Kost",
+    default: "Moon Kost",
+  },
+  description: "Moon Kost - Cari & Kelola Kost Lebih Mudah",
+  // metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}

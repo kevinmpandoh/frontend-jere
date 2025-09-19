@@ -1,0 +1,73 @@
+import {
+  AcIcon,
+  AirPanasIcon,
+  BantalIcon,
+  CCTVIcon,
+  CerminIcon,
+  DispenserIcon,
+  JemuranIcon,
+  JendelaIcon,
+  KipasAnginIcon,
+  KitchenIcon,
+  KlosetJongkokIcon,
+  KomporIcon,
+  KulkasIcon,
+  KursiIcon,
+  LemariIcon,
+  MejaIcon,
+  MesinCuciIcon,
+  MotorIcon,
+  PenjagaKostIcon,
+  RuangKeluargaIcon,
+  RuangSantaiIcon,
+  ShowerIcon,
+  WastafelIcon,
+} from "@/assets/icons";
+import {
+  Wifi,
+  BedSingle,
+  CarIcon,
+  TvIcon,
+  BathIcon,
+  ToiletIcon,
+} from "lucide-react";
+
+export const FACILITY_ICONS: Record<string, { label: string; icon: any }> = {
+  // Kategori Kost
+  WiFi: { label: "WiFi", icon: Wifi },
+  "Parkir Motor": { label: "Parkir Motor", icon: MotorIcon },
+  "Parkir Mobil": { label: "Parkir Mobil", icon: CarIcon },
+  "Dapur Bersama": { label: "Dapur Bersama", icon: KitchenIcon },
+  Dispenser: { label: "Dispenser", icon: DispenserIcon },
+  Jemuran: { label: "Jemuran", icon: JemuranIcon },
+  "K. Mandi Luar": { label: "Kamar Mandi Luar", icon: KitchenIcon },
+  Kompor: { label: "Kompor", icon: KomporIcon },
+  "Mesin Cuci": { label: "Mesin Cuci", icon: MesinCuciIcon },
+  Kulkas: { label: "Kulkas", icon: KulkasIcon },
+  TV: { label: "TV", icon: TvIcon },
+  CCTV: { label: "CCTV", icon: CCTVIcon },
+  "Penjaga Kos": { label: "Penjaga Kos", icon: PenjagaKostIcon },
+  "R. Keluarga": { label: "Ruang Keluarga", icon: RuangKeluargaIcon },
+  "R. Santai": { label: "Ruang Santai", icon: RuangSantaiIcon },
+
+  // Kategori Kamar
+  Cermin: { label: "Cermin", icon: CerminIcon },
+  "Dapur Pribadi": { label: "Dapur Pribadi", icon: KitchenIcon },
+  Jendela: { label: "Jendela", icon: JendelaIcon },
+  Kasur: { label: "Kasur", icon: BedSingle },
+  Kursi: { label: "Kursi", icon: KursiIcon },
+  Bantal: { label: "Bantal", icon: BantalIcon },
+  "Kipas Angin": { label: "Kipas Angin", icon: KipasAnginIcon },
+  "Lemari Baju": { label: "Lemari Baju", icon: LemariIcon },
+  Meja: { label: "Meja", icon: MejaIcon },
+  Wastafel: { label: "Wastafel", icon: WastafelIcon },
+
+  AC: { label: "AC", icon: AcIcon },
+
+  // Kategori Kamar Mandi
+  "Air Panas": { label: "Air Panas", icon: AirPanasIcon },
+  "K. Mandi Dalam": { label: "Kamar Mandi Dalam", icon: BathIcon },
+  "Kloset Duduk": { label: "Kloset Duduk", icon: ToiletIcon },
+  "Kloset Jongkok": { label: "Kloset Jongkok", icon: KlosetJongkokIcon },
+  Shower: { label: "Shower", icon: ShowerIcon },
+};
