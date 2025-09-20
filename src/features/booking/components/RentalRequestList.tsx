@@ -4,6 +4,7 @@
 import React from "react";
 import RentalRequestCard from "./RentalRequestCard";
 import { useTenantBooking } from "../hooks/useTenantBooking";
+import EmptyState from "@/components/common/EmptyState";
 
 const RentalRequestList = () => {
   const { booking, isLoading } = useTenantBooking();
@@ -13,7 +14,7 @@ const RentalRequestList = () => {
   }
 
   if (!booking || booking.length === 0) {
-    return <p className="text-gray-500">Belum ada pengajuan sewa.</p>;
+    return <EmptyState message="Kamu belum pengajuan sewa kost" />;
   }
 
   return (

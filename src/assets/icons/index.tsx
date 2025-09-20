@@ -94,54 +94,152 @@ export const DiscordIcon: FC<IconType> = ({ className, onClick }) => {
 };
 
 export const MotorIcon = () => {
-  return <Image src={"/icons/motor.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/motor.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const CarIcon = () => {
-  return <Image src={"/icons/car.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/car.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const KitchenIcon = () => {
-  return <Image src={"/icons/kitchen.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/kitchen.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const DispenserIcon = () => {
   return (
-    <Image src={"/icons/dispenser.png"} width={24} height={24} alt="Logo" />
+    <Image
+      src={"/icons/dispenser.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
   );
 };
 
 export const JemuranIcon = () => {
-  return <Image src={"/icons/dry.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/dry.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const bathubIcon = () => {
-  return <Image src={"/icons/dry.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/dry.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const KomporIcon = () => {
-  return <Image src={"/icons/kompor.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/kompor.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const MesinCuciIcon = () => {
   return (
-    <Image src={"/icons/mesin-cuci.svg"} width={24} height={24} alt="Logo" />
+    <Image
+      src={"/icons/mesin-cuci.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
   );
 };
 export const KulkasIcon = () => {
-  return <Image src={"/icons/freezer.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/freezer.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const TvIcon = () => {
-  return <Image src={"/icons/TV.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/TV.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const CCTVIcon = () => {
-  return <Image src={"/icons/cctv.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/cctv.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const PenjagaKostIcon = () => {
-  return <Image src={"/icons/penjaga.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/penjaga.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const RuangSantaiIcon = () => {
   return (
-    <Image src={"/icons/ruang-santai.svg"} width={24} height={24} alt="Logo" />
+    <Image
+      src={"/icons/ruang-santai.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
   );
 };
 export const RuangKeluargaIcon = () => {
@@ -151,61 +249,166 @@ export const RuangKeluargaIcon = () => {
       width={24}
       height={24}
       alt="Logo"
+      className="text-primary-500"
     />
   );
 };
 export const CerminIcon = () => {
-  return <Image src={"/icons/cermin.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/cermin.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const DapurPribadiIcon = () => {
-  return <Image src={"/icons/kitchen.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/kitchen.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const JendelaIcon = () => {
-  return <Image src={"/icons/window.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/window.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const KursiIcon = () => {
-  return <Image src={"/icons/kursi.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/kursi.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const BantalIcon = () => {
-  return <Image src={"/icons/bantal.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/bantal.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const KipasAnginIcon = () => {
-  return <Image src={"/icons/kipas.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/kipas.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const LemariIcon = () => {
-  return <Image src={"/icons/lemari.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/lemari.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 export const MejaIcon = () => {
-  return <Image src={"/icons/meja.png"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/meja.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const WastafelIcon = () => {
   return (
-    <Image src={"/icons/wastafel.png"} width={24} height={24} alt="Logo" />
+    <Image
+      src={"/icons/wastafel.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
   );
 };
 export const AcIcon = () => {
-  return <Image src={"/icons/ac.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/ac.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
 
 export const AirPanasIcon = () => {
   return (
-    <Image src={"/icons/air-panas.svg"} width={24} height={24} alt="Logo" />
+    <Image
+      src={"/icons/air-panas.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
   );
 };
 
 export const KlosetDudukIcon = () => {
   return (
-    <Image src={"/icons/kloset-duduk.svg"} width={24} height={24} alt="Logo" />
+    <Image
+      src={"/icons/kloset-duduk.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
   );
 };
 export const KlosetJongkokIcon = () => {
   return (
-    <Image src={"/icons/wc-jongkok.png"} width={24} height={24} alt="Logo" />
+    <Image
+      src={"/icons/wc-jongkok.png"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
   );
 };
 export const ShowerIcon = () => {
-  return <Image src={"/icons/shower.svg"} width={24} height={24} alt="Logo" />;
+  return (
+    <Image
+      src={"/icons/shower.svg"}
+      width={24}
+      height={24}
+      alt="Logo"
+      className="text-primary-500"
+    />
+  );
 };
