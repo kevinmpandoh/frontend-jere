@@ -55,6 +55,8 @@ const KostCard = ({
   const { wishlist, add, remove } = useWishlist();
   const { user } = useAuthStore();
 
+  console.log(facilities, "FACILITES");
+
   const isWishlisted = wishlist?.data?.some(
     (item: any) => item.roomType_id === id,
   );
