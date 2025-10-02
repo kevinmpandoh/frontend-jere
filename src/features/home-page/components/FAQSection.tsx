@@ -8,11 +8,6 @@ import { TabsTrigger } from "@/components/ui/tabs";
 
 const penyewaFaqs = [
   {
-    question: "Bagaimana cara menyewa kost?",
-    answer:
-      'Cari kost sesuai preferensi, klik "Ajukan Sewa", isi data, lalu tunggu persetujuan dari pemilik.',
-  },
-  {
     question: "Bagaimana jika saya telat membayar?",
     answer:
       "Akan ada pengingat otomatis. Denda berlaku sesuai ketentuan pemilik kost.",

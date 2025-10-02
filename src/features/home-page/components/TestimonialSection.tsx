@@ -15,11 +15,7 @@ const testimonials = [
     rating: 4,
     comment: "Fitur chat sangat berguna. Pemiliknya responsif!",
   },
-  {
-    name: "Debby T.",
-    rating: 5,
-    comment: "Rekomendasinya bener-bener sesuai preferensiku. Mantap!",
-  },
+
   {
     name: "Michael K.",
     rating: 5,

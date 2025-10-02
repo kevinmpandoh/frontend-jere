@@ -5,7 +5,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils"; // optional: classNames helper
 
-const tabs = ["Informasi Akun", "Ganti Password", "Preferensi"];
+const tabs = ["Informasi Akun", "Ganti Password"];
 
 export default function ProfileTabs({
   onChange,

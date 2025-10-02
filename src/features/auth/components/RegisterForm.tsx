@@ -20,12 +20,6 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const tenantFeatures = [
   {
-    image: "/images/tenant-search.jpg",
-    title: "Cari Kost Sesuai Preferensi",
-    description:
-      "Gunakan filter lokasi, harga, dan fasilitas untuk menemukan kost yang cocok.",
-  },
-  {
     image: "/images/tenant-secure.jpg",
     title: "Transaksi Sewa Aman",
     description:
