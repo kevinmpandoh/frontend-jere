@@ -1,9 +1,5 @@
 "use client";
 
-import {
-  useIsWishlisted,
-  useWishlist,
-} from "@/features/wishlist/hooks/useWishlist";
 import { ShareModal } from "./ShareModal";
 
 import { useAuthStore } from "@/stores/auth.store";
@@ -34,18 +30,8 @@ export function KostInfo({
   availableRooms,
 }: KostInfoProps) {
   const [isShareOpen, setShareOpen] = useState(false);
-  const { add, remove } = useWishlist();
 
   const { user } = useAuthStore();
-  const { data: isWishlisted, isLoading: checkingWishlist } =
-    useIsWishlisted(id);
-  const toggleWishlist = () => {
-    if (isWishlisted) {
-      remove.mutate(id);
-    } else {
-      add.mutate(id);
-    }
-  };
 
   return (
     <>
@@ -82,21 +68,6 @@ export function KostInfo({
             >
               <Share2 className="text-muted-foreground h-6 w-6" />
             </button>
-            {user?.role === "tenant" && (
-              <button
-                onClick={toggleWishlist}
-                className="hover:bg-accent rounded-full p-2 transition"
-                disabled={add.isPending || remove.isPending || checkingWishlist}
-              >
-                <Heart
-                  className={`h-6 w-6 ${
-                    isWishlisted
-                      ? "fill-primary-500 text-primary-500"
-                      : "text-gray-600"
-                  }`}
-                />
-              </button>
-            )}
           </div>
         </div>
 

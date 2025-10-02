@@ -25,9 +25,7 @@ const Footer = () => {
             <li>
               <Link href="/kosts">Cari Kost</Link>
             </li>
-            <li>
-              <Link href="/user/wishlist">Wishlist</Link>
-            </li>
+
             <li>
               <Link href="/">Bantuan</Link>
             </li>

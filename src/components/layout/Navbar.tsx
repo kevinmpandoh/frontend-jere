@@ -84,7 +84,6 @@ const Navbar = () => {
 
   const navItems = [
     { href: "/", label: "Home", icon: Home },
-    { href: "/user/wishlist", label: "Favorit", icon: Heart },
     { href: "/user/kost-saya", label: "Kost Saya", icon: Building2 },
     { href: "/pesan", label: "Pesan", icon: MessageCircle },
     {
@@ -261,22 +260,6 @@ const Navbar = () => {
                           />
                           <span className="text-base font-medium">
                             Pengajuan Sewa
-                          </span>
-                        </DropdownItem>
-                      </li>
-                      <li>
-                        <DropdownItem
-                          onItemClick={() => closeDropdown}
-                          tag="a"
-                          href="/user/wishlist"
-                          className="group text-theme-sm flex items-center gap-3 rounded-lg px-3 py-3 font-semibold text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
-                        >
-                          <BookHeart
-                            className="text-primary dark:group-hover:fill-gray-300"
-                            size={24}
-                          />
-                          <span className="text-base font-medium">
-                            Favorite
                           </span>
                         </DropdownItem>
                       </li>

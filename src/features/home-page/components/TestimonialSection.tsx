@@ -30,16 +30,11 @@ const testimonials = [
     rating: 4,
     comment: "Banyak kost dekat kampus yang cocok buat aku.",
   },
-  {
-    name: "Daniel J.",
-    rating: 5,
-    comment: "Suka banget fitur wishlist-nya. Gampang bandingin kost!",
-  },
 ];
 
 const chunkArray = (arr: any[], size: number) => {
   return Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
-    arr.slice(i * size, i * size + size)
+    arr.slice(i * size, i * size + size),
   );
 };
 
@@ -75,9 +70,9 @@ const TestimonialSection = () => {
   }, [chunkSize]);
 
   return (
-    <section className="bg-white py-12 px-4 md:px-16 lg:px-36">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">
+    <section className="bg-white px-4 py-12 md:px-16 lg:px-36">
+      <div className="mx-auto max-w-6xl px-4 text-center">
+        <h2 className="mb-8 text-2xl font-bold md:text-3xl">
           Apa Kata Penyewa?
         </h2>
 
@@ -89,22 +84,22 @@ const TestimonialSection = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.4 }}
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+              className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
             >
               {grouped[index].map((t, i) => (
                 <div
                   key={i}
-                  className="bg-white border p-8 rounded-xl shadow text-left"
+                  className="rounded-xl border bg-white p-8 text-left shadow"
                 >
-                  <div className="flex items-center mb-3">
-                    <div className="bg-primary/80 text-white rounded-full w-10 h-10 flex items-center justify-center font-semibold text-sm">
+                  <div className="mb-3 flex items-center">
+                    <div className="bg-primary/80 flex h-10 w-10 items-center justify-center rounded-full text-sm font-semibold text-white">
                       {t.name[0]}
                     </div>
                     <div className="ml-3">
                       <p className="font-semibold">{t.name}</p>
                       <div className="flex text-yellow-500">
                         {Array.from({ length: t.rating }).map((_, j) => (
-                          <Star key={j} className="w-4 h-4 fill-yellow-500" />
+                          <Star key={j} className="h-4 w-4 fill-yellow-500" />
                         ))}
                       </div>
                     </div>
@@ -121,7 +116,7 @@ const TestimonialSection = () => {
             <button
               key={i}
               onClick={() => setIndex(i)}
-              className={`w-2 h-2 rounded-full ${
+              className={`h-2 w-2 rounded-full ${
                 i === index ? "bg-primary" : "bg-gray-300"
               }`}
             />

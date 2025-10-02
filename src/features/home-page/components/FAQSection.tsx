@@ -13,11 +13,6 @@ const penyewaFaqs = [
       'Cari kost sesuai preferensi, klik "Ajukan Sewa", isi data, lalu tunggu persetujuan dari pemilik.',
   },
   {
-    question: "Apakah saya bisa menyimpan kost favorit?",
-    answer:
-      "Bisa. Klik ikon hati di kartu kost untuk menambah ke wishlist kamu.",
-  },
-  {
     question: "Bagaimana jika saya telat membayar?",
     answer:
       "Akan ada pengingat otomatis. Denda berlaku sesuai ketentuan pemilik kost.",

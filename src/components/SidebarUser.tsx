@@ -44,12 +44,6 @@ const menuItems = [
     icon: History,
     match: "riwayat-kost",
   },
-  {
-    href: "wishlist",
-    label: "Wishlist",
-    icon: BookHeart,
-    match: "wishlist",
-  },
 ];
 
 const SidebarUser = () => {

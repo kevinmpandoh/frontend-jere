@@ -17,7 +17,6 @@ import Link from "next/link";
 
 import { FACILITY_ICONS } from "@/constants/facilities";
 
-import { useWishlist } from "@/features/wishlist/hooks/useWishlist";
 import { useAuthStore } from "@/stores/auth.store";
 import { Badge } from "../ui/badge";
 import KostCardSkeleton from "../Skeleton/CardListKostSkeleton";
@@ -52,14 +51,8 @@ const KostCard = ({
   isLoading = false,
 }: KostCardProps) => {
   const [currentImage, setCurrentImage] = useState(0);
-  const { wishlist, add, remove } = useWishlist();
+
   const { user } = useAuthStore();
-
-  console.log(facilities, "FACILITES");
-
-  const isWishlisted = wishlist?.data?.some(
-    (item: any) => item.roomType_id === id,
-  );
 
   const handleNext = () => {
     setCurrentImage((prev) => (prev + 1) % images.length);
@@ -71,14 +64,6 @@ const KostCard = ({
 
   const goToImage = (index: number) => {
     setCurrentImage(index);
-  };
-
-  const toggleWishlist = async () => {
-    if (isWishlisted) {
-      remove.mutate(id);
-    } else {
-      add.mutate(id);
-    }
   };
 
   if (isLoading) {
@@ -107,22 +92,6 @@ const KostCard = ({
             />
           ))}
         </div>
-
-        {user?.role === "tenant" && (
-          <div
-            onClick={(e) => {
-              e.preventDefault(); // Biar ga ikut klik ke Link
-              toggleWishlist();
-            }}
-            className="absolute top-2 right-2 rounded-full bg-white/80 p-1 hover:bg-white"
-          >
-            <Heart
-              className={`h-5 w-5 cursor-pointer ${
-                isWishlisted ? "fill-red-500 text-red-500" : "text-gray-600"
-              }`}
-            />
-          </div>
-        )}
 
         {/* Navigasi gambar */}
         {images.length > 1 && (
