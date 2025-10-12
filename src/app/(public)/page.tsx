@@ -5,12 +5,7 @@ import dynamic from "next/dynamic";
 const HeroSection = dynamic(
   () => import("@/features/home-page/components/HeroSection"),
 );
-const FAQSection = dynamic(
-  () => import("@/features/home-page/components/FAQSection"),
-);
-const DownloadAppSection = dynamic(
-  () => import("@/features/home-page/components/DownloadAppSection"),
-);
+
 const CTASection = dynamic(
   () => import("@/features/home-page/components/CTASection"),
 );
@@ -58,14 +53,6 @@ export default function Home() {
 
         <AnimateSection id="join-as-owner">
           <JoinAsOwnerSection />
-        </AnimateSection>
-
-        <AnimateSection id="faq">
-          <FAQSection />
-        </AnimateSection>
-
-        <AnimateSection id="download-app">
-          <DownloadAppSection />
         </AnimateSection>
 
         <AnimateSection id="cta">
