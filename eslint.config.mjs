@@ -15,11 +15,9 @@ const eslintConfig = [
     extends: ["next"],
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
-        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
-      ],
+      "@typescript-eslint/no-unused-vars": "off",
       "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
     },
   }),
   {
