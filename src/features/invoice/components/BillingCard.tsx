@@ -20,10 +20,10 @@ type Props = {
 };
 
 const BillingCard: React.FC<Props> = ({ billing }) => {
-  const canPay =
-    billing.status === "unpaid" &&
-    !billing.isLate &&
-    billing.daysRemaining <= 14;
+  // const canPay =
+  //   billing.status === "unpaid" &&
+  //   !billing.isLate &&
+  //   billing.daysRemaining <= 14;
 
   const renderDueStatus = () => {
     if (billing.status === "paid") return null;
@@ -79,13 +79,13 @@ const BillingCard: React.FC<Props> = ({ billing }) => {
           {renderDueStatus()}
           {/* <p className="text-sm text-red-600">{statusText}</p> */}
         </div>
-        {canPay && (
-          <Button>
-            <Link href={`/payments?invoice=${billing.invoiceNumber}`}>
-              Bayar Sekarang
-            </Link>
-          </Button>
-        )}
+        {/* {canPay && ( */}
+        <Button>
+          <Link href={`/payments?invoice=${billing.invoiceNumber}`}>
+            Bayar Sekarang
+          </Link>
+        </Button>
+        {/* )} */}
       </div>
     </div>
   );
