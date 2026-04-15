@@ -28,7 +28,12 @@ const Page = () => {
   }, [kostOwnerData]);
 
   const handleTambahKost = () => {
-    if (usedKost >= currentSubscription?.package?.maxKost) {
+    console.log("Used Kost:", usedKost);
+    console.log("Current Subscription:", currentSubscription);
+    if (
+      usedKost >= currentSubscription?.package?.maxKost &&
+      currentSubscription?.package?.maxKost !== null
+    ) {
       openUpgrade();
     } else {
       router.push("/dashboard/tambah-kost");

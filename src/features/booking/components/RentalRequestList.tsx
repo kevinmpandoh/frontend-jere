@@ -17,6 +17,8 @@ const RentalRequestList = () => {
     return <EmptyState message="Kamu belum pengajuan sewa kost" />;
   }
 
+  console.log("Booking List:", booking);
+
   return (
     <>
       {booking?.map((item: any) => (
@@ -30,7 +32,7 @@ const RentalRequestList = () => {
           address={item?.address}
           category={item?.jenisKost}
           checkInDate={item?.tanggalMasuk}
-          checkOutDate={item?.tanggalKelaur}
+          checkOutDate={item?.tanggalKeluar}
           duration={item?.durasi}
           imageUrl={item?.fotoKamar}
           price={item?.harga}
