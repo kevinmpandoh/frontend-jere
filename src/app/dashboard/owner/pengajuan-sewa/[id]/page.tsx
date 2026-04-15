@@ -25,6 +25,8 @@ export default function PengajuanDetailPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { data, isLoading, isError } = getDetailBooking;
 
+  console.log("Detail Booking:", data);
+
   const { rejectBooking, approveBooking } = useOwnerBooking(id as string);
   const { getAvaibleRooms } = useRoom(data?.kost?.roomTypeId || "");
 
@@ -151,7 +153,7 @@ export default function PengajuanDetailPage() {
           <div className="border-t" />
 
           {/* Dokumen */}
-          <section className="space-y-3">
+          {/* <section className="space-y-3">
             <h2 className="text-xl font-semibold">Kelengkapan Dokumen</h2>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-1">
@@ -177,7 +179,7 @@ export default function PengajuanDetailPage() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
 
         {/* Kanan - Sticky Card */}
