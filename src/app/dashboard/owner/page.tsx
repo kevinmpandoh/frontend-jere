@@ -43,7 +43,7 @@ const DashboardOwner = () => {
           icon={Calendar}
           iconBg="text-primary-600"
           title="Total Pengajuan"
-          value={data.totalRequest}
+          value={data.totalRequest || 0}
           description="Jumlah pengajuan sewa penyewa"
         />
         <StatCard
@@ -57,14 +57,14 @@ const DashboardOwner = () => {
           icon={User}
           iconBg="text-green-700"
           title="Total Penyewa"
-          value={data.activeTenants}
+          value={data.activeTenants || 0}
           description="Jumlah penyewa aktif saat ini"
         />
         <StatCard
           icon={DoorClosed}
           iconBg="text-sky-400"
           title="Total Kamar"
-          value={data.rooms.total}
+          value={data.rooms.total || 0}
           description="Jumlah total kamar yang tersedia"
         />
       </section>
