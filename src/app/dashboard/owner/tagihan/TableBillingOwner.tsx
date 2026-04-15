@@ -146,7 +146,7 @@ const TableBillingOwner = ({
               )}
 
               <TableCell className="text-right">
-                Rp {billing.total.toLocaleString("id-ID")}
+                Rp {billing.total?.toLocaleString("id-ID") || 0}
               </TableCell>
             </TableRow>
           ))}
