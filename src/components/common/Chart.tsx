@@ -102,7 +102,7 @@ export default function Chart({ data }: { data: PendapatanPerBulan[] }) {
             Total Pendapatan
           </h3>
           <p className="text-theme-sm mt-1 text-gray-500 dark:text-gray-400">
-            Rp {total.toLocaleString("id-ID")}
+            Rp {total?.toLocaleString("id-ID") || 0}
           </p>
         </div>
       </div>

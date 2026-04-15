@@ -102,7 +102,7 @@ export const BillingHistory = ({
                   })}
                 </TableCell>
                 <TableCell className="text-right">
-                  Rp {item.amount.toLocaleString("id-ID")}
+                  Rp {item.amount?.toLocaleString("id-ID") || 0}
                 </TableCell>
               </TableRow>
             ))}
@@ -111,7 +111,7 @@ export const BillingHistory = ({
             <TableRow>
               <TableCell colSpan={4}>Total</TableCell>
               <TableCell className="text-right">
-                Rp {total.toLocaleString("id-ID")}
+                Rp {total?.toLocaleString("id-ID") || 0}
               </TableCell>
             </TableRow>
           </TableFooter>
