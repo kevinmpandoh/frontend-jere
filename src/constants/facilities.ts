@@ -34,13 +34,13 @@ import {
 
 export const FACILITY_ICONS: Record<string, { label: string; icon: any }> = {
   // Kategori Kost
-  WiFi: { label: "WiFi", icon: Wifi },
+  Wifi: { label: "Wifi", icon: Wifi },
   "Parkir Motor": { label: "Parkir Motor", icon: MotorIcon },
   "Parkir Mobil": { label: "Parkir Mobil", icon: CarIcon },
   "Dapur Bersama": { label: "Dapur Bersama", icon: KitchenIcon },
   Dispenser: { label: "Dispenser", icon: DispenserIcon },
   Jemuran: { label: "Jemuran", icon: JemuranIcon },
-  "K. Mandi Luar": { label: "Kamar Mandi Luar", icon: KitchenIcon },
+  "K. Mandi Luar": { label: "Kamar Mandi Luar", icon: BathIcon },
   Kompor: { label: "Kompor", icon: KomporIcon },
   "Mesin Cuci": { label: "Mesin Cuci", icon: MesinCuciIcon },
   Kulkas: { label: "Kulkas", icon: KulkasIcon },
